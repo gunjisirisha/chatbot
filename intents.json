@@ -1,0 +1,371 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay","good morning","good afternoon","good evning"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?","Who you are?"],
+     "responses": ["I am Oncer. I try to answer your questions. Sometimes I get them right. I get better over time. For questions I cannot answer, I will mail my colleagues and get back. Would appreciate if you could share your email id."]
+    },
+    {"tag": "name",
+    "patterns": ["What are you into?"],
+    "responses": ["Full stack development, Business analysis, Product validation"]
+    },
+    {"tag": "help",
+    "patterns": ["Where are you located?","where are you from","where is your location"],
+    "responses": ["India"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["How many employees are there?","what is the size of your team","team size"],
+    "responses": ["20, and growing"]
+    },
+    {"tag": "complaint",
+    "patterns": ["How are you?"],
+    "responses": ["I am great, thanks"]
+    },
+    {"tag": "info",
+    "patterns": ["How’s it going?"],
+    "responses": ["Going good, thanks. How are you?"]
+    },
+    {"tag": "wish",
+    "patterns": ["How are you doing?"],
+    "responses": ["Doing well, thanks. How are you?"]
+    },
+    {"tag": "expert",
+    "patterns": ["What is your area of expertise","expertise"],
+    "responses": ["Full stack development, Business analysis, UX Design, Native application development, Product validation."]
+    },
+    {"tag": "customers",
+    "patterns": ["Who are your customers?","customers"],
+    "responses": ["We can give you a list of customers we have worked with at a future discussion"]
+    },
+    {"tag": "person",
+    "patterns": ["Where are your customers located?","customers located"],
+    "responses": ["Our customers are located in the USA"]
+    },
+	{"tag": "contact",
+     "patterns": ["Will there be a specific contact person?","contact person"],
+     "responses": ["Yes, we have project specific contacts"]
+    },
+    {"tag": "requirement",
+     "patterns": ["How do you estimate project timelines?","estimate project timelines","estimate timelines"],
+     "responses": ["Project timelines are estimated at the start of the project, based on scope, requirement"]
+    },
+    {"tag": "project",
+     "patterns": ["What’s the first step you take in a project?","step take project"],
+     "responses": ["We need to understand your current circumstances and business requirement"]
+    },
+    {"tag": "style",
+     "patterns": ["What’s your project management style?","project management style","project management style"],
+     "responses": ["We prefer Agile methodology"]
+    },
+    {"tag": "work",
+    "patterns": ["How do you estimate project timelines?","estimate timelines","project timelines"],
+    "responses": ["Project timelines are estimated at the start of the project, based on scope, requirement analysis, change requests"]
+    },
+    {"tag": "developers",
+    "patterns": ["How many developers do you have?","developers"],
+    "responses": ["15"]
+    },
+    {"tag": "team",
+    "patterns": ["How are the intellectual rights handled?","intellectual rights"],
+    "responses": ["We have developed our own NDA that we have signed with our development team. The agreement ensures confidentiality and the full transfer of ownership of the intellectual property from the developer to the company. After you decide to outsource your project to us, we sign up for a software outsourcing agreement that transfers all IP rights to your company. "]
+    },
+    {"tag": "projects",
+    "patterns": ["What’s the success rate of previous projects?","previous projects"],
+    "responses": ["We have very satisfied customers with whom we have built end to end solutions. We are a solutions provider and take complete ownership of the development to provide value to you"]
+    },
+    {"tag": "change",
+    "patterns": ["What happens if requirements change?","requirements change"],
+    "responses": ["Any changes to the original specification can be discussed and agreed upon before being worked on"]
+    },
+    {"tag": "stakeholders",
+    "patterns": ["Who are the key stakeholders?","stakeholders"],
+    "responses": ["Project sponsors, project team, project managers, executives, customers and users"]
+    },
+    {"tag": "robot",
+    "patterns": ["Are you a robot?","robot"],
+    "responses": ["Yes I’m a robot but I am a smart one!"]
+    },
+    {"tag": "age",
+    "patterns": ["How old are you? / What is your age?","age"],
+    "responses": ["I am ageless"]
+    },
+    {"tag": "data",
+    "patterns": ["What do you do with my data?","data"],
+    "responses": ["Use it to improve the way we help you"]
+    },
+	{"tag": "say",
+     "patterns": ["Do you save what I say?","save"],
+     "responses": ["Yes, but only to help you. the data is not shared with anyone else"]
+    },
+    {"tag": "team",
+     "patterns": ["Who made you?"],
+     "responses": ["Our software development team"]
+    },
+    {"tag": "speak",
+     "patterns": ["Which language do you speak?","language"],
+     "responses": ["English"]
+    },
+    {"tag": "live",
+     "patterns": ["Where do you live?","where are you from","location"],
+     "responses": ["India"]
+    },
+    {"tag": "india",
+    "patterns": ["Where in India?","india"],
+    "responses": ["Bangalore"]
+    },
+    {"tag": "limtations",
+    "patterns": ["How many people can speak to you at once?","multiple people can speak"],
+    "responses": ["I multi task - no limtations"]
+    },
+    {"tag": "weather",
+    "patterns": ["What’s the weather like today?","weather "],
+    "responses": ["The weather today in your location is"]
+    },
+    {"tag": "careers",
+    "patterns": ["Do you have a job for me? Where can I apply?","job ","apply"],
+    "responses": ["Please check the careers section of our website"]
+    },
+    {"tag": "boss",
+    "patterns": ["Who is your boss?","boss"],
+    "responses": ["My developer"]
+    },
+    {"tag": "manager",
+    "patterns": ["Who is your reporting manager?","reporting manager","manager"],
+    "responses": ["My team lead"]
+    },
+    {"tag": "development",
+    "patterns": ["What can you do?","how can you help me","help me"],
+    "responses": ["I am here to help with you questions on software development / system integration"]
+    },
+    {"tag": "tools",
+    "patterns": ["What tools you use for software development","tools","software development"],
+    "responses": ["Java Script, ReactJS, Express JS, My SQL"]
+    },
+    {"tag": "GST",
+    "patterns": ["GST?","what is tour gst"],
+    "responses": ["My apologies. I did not understand the question. I will have to ask my colleague for help."]
+    },
+	{"tag": "choose",
+     "patterns": ["Why should I choose you?","choose"],
+     "responses": ["Hiring your own software developers can be a really smart choice, however, recruitment process is time-consuming and the costs of keeping an in-house programming team are very high"]
+    },
+    {"tag": "available",
+     "patterns": ["Can the software be upgraded in the future as new technology becomes available?","software be upgraded","software upgraded"],
+     "responses": ["Yes, of course! We are always happy to improve, upgrade and further develop our work, for a cost"]
+    },
+    {"tag": "charge",
+     "patterns": ["How much do you charge?","charge","cost","money"],
+     "responses": ["It depends on project scope, time spent on the project and the solution we provide"]
+    },
+    {"tag": "customers",
+     "patterns": ["Do you have any testimonials from satisfied customers?","satisfied customers","satisfied"],
+     "responses": ["Absolutely! We will share them with you during a discussion"]
+    },
+    {"tag": "clients",
+    "patterns": ["How do you handle communications and meetings for global clients?","communications and meetings","meetings"],
+    "responses": ["We use various communication tools like GoogleMeets, Slack, gmail, zoom to stay connected with our clients and keep them updated"]
+    },
+    {"tag": "property",
+    "patterns": ["Do you guarantee the security and confidentiality of our intellectual property?","guarantee the security","security"],
+    "responses": ["This clause will be covered in the contract, and NDA signed between us specifying the same."]
+    },
+    {"tag": "documentation",
+    "patterns": ["Do you provide system documentation?","documentation"],
+    "responses": ["We provide all the required documentation to the client. Our documentation is comprehensive and self-explanatory."]
+    },
+    {"tag": "requests",
+    "patterns": ["How do you handle change requests from your customers?","requests your customers","requests from customers"],
+    "responses": ["We have a standard procedure of handling change requests from our customers. Once we get a change request from a client we do an impact analysis and communicate the impact to the original timeline and cost estimates. Once the customer approves these changes to the estimates, we implement the changes."]
+    },
+    {"tag": "reviews",
+    "patterns": ["Do you practice code reviews?","code reviews","reviews"],
+    "responses": ["A peer review practice is a part of our standard development process."]
+    },
+    {"tag": "work",
+    "patterns": ["What information do you need from me to start work?","information","information  to start work"],
+    "responses": ["Let us get on a call and discuss - send us a mail at support@oncierre.com"]
+    },
+    {"tag": "complete",
+    "patterns": ["Do you provide support services after the development process is complete?","support services"],
+    "responses": ["Yes, we are always glad to provide technical support and service the deliverables we have developed."]
+    },
+    {"tag": "NDA",
+    "patterns": ["Will you sign an NDA?","NDA"],
+    "responses": ["We have to sign a NDA to start the work"]
+    },
+    {"tag": "practice",
+    "patterns": ["Which payment model do you practice?","payment model","payment"],
+    "responses": ["We prefer you sign up for the entire development of the solution at a mutually agreed monthly fee for the period of the contract. Either party can cancel the contract as per the terms of the contract "]
+    },
+	
+	{"tag": "started",
+     "patterns": ["Can you make changes to a product which other developers have already started?","make changes","make changes to product"],
+     "responses": ["Yes, we can. Our software engineers are well versed in various technologies and will be able to maintain, upgrade software developed by others as well."]
+    },
+    {"tag": "specification",
+     "patterns": ["What details should I provide in a project specification?","project specification","specification"],
+     "responses": ["We can discuss this in detail, we usually like to conduct workshops to arrive at the requirements, where this is developed and understood clearly by both the parties involved"]
+    },
+    {"tag": "existing",
+     "patterns": ["Can you support my existing development team?","support","existing development teamsting team"],
+     "responses": ["Yes. You can use the help of our experts. Depending on your needs, our developers can join to your internal team and start working with them."]
+    },
+    {"tag": "guarantee",
+     "patterns": ["What benefits can you guarantee?","benefits","guarantee"],
+     "responses": ["We guarantee a world class solution for your needs. Results guarantee: Progress-linked payments weighted toward the end. Confidentiality guarantee: All client details will be kept confidential"]
+    },
+    {"tag": "sign",
+    "patterns": ["What contracts and agreements do you sign?","contracts and agreements","contracts","agreements"],
+    "responses": ["We sign NDAs before initial discussions, and final contracts are drawn out in detail. We are normally bound by the legal framework of our client's country, and we are a registered organization in India."]
+    },
+    {"tag": "project?",
+    "patterns": ["What control do we have over the project?","control","control over the project"],
+    "responses": ["You will have ability to keep close control over the project. Our assigned Project Manager will be your single point-of-contact for all issue resolution, and will work closely with your guidelines and within the agreed framework."]
+    },
+    {"tag": "progress?",
+    "patterns": ["How do we keep ourselves informed about progress?","informed about progress","progress"],
+    "responses": ["We will send you regular project status reports. We use a combination of pre-determined update schedules  - email, tele-conferences or live chat."]
+    },
+    {"tag": "work?",
+    "patterns": ["Can you show us examples of your work?","examples "],
+    "responses": ["We are proud of the work we have done for various customers. We design and develop customer-oriented applications. We can provide you details of this during our dicsussions."]
+    },
+    {"tag": "you?",
+    "patterns": ["What advantages do I get by outsourcing the project to you?","advantages"],
+    "responses": ["You get a world class software development team working on your software development while you focus on growing your company"]
+    },
+    {"tag": "use?",
+    "patterns": ["What software methodologies do you use?","software methodologies"],
+    "responses": ["All our software development and testing processes are running while adhering to highly effective methodologies including Agile / Scrum to meet the highest KPIs for your project."]
+    },
+    {"tag": "follow?",
+    "patterns": ["What documentation process do you follow?","documentation"],
+    "responses": ["We document all the operations required to handle the development process and measure them according to the following key parameters: Project scope statement; Activity description; Milestone documentation; Organizational assets."]
+    },
+    {"tag": "issues?",
+    "patterns": ["How do we comply with Intellectual Property issues?","Intellectual Property"],
+    "responses": ["We have NDA signed them with our development team. The agreement ensures the confidentiality and the full transfer of ownership of the intellectual property from the developer to the company. After you decide to outsource your project to us, we sign up for a software outsourcing agreement that transfers all IP rights to your company."]
+    },
+    {"tag": "development?",
+    "patterns": ["What control do I have over project development?"],
+    "responses": ["You will have full control over all stages in the development life cycle of your project. You can monitor the process through regular calls and meetings, track the status of every task. We will keep you informed of the progress in regard to the project roadmap."]
+    },
+	
+	{"tag": "support?",
+     "patterns": ["Do I get any product support?","product support"],
+     "responses": ["We will support any issues with the product, as per the warranty terms mutually agreed in your contract. Our endevour is to make you succeed in your business"]
+    },
+    {"tag": "obligated",
+     "patterns": ["Am I obligated to pay any cancellation fees if I decide to canel the project?","cancellation fees","fees"],
+     "responses": ["No, you’re free from charges on any cancellation request in case you need us to stop working on the project. You just need to inform us 30 days in advance. So, we are able to close all current work on your project. In case you need to stop development work urgently, you will need to pay for two working weeks, to ensure that we fully cover all our developers' team remuneration for working on your project."]
+    },
+    {"tag": "deliverable?",
+     "patterns": ["How do you ensure security and risk management of the deliverable?","risk management","risk"],
+     "responses": ["Our specialists evaluate all types of threats before creating the product including confidentiality, IP compliance, third-party integrations, data management, and others. This approach will allow us to discover any possible risks and create the appropriate policies to prevent them."]
+    },
+    {"tag": "launch?",
+     "patterns": ["What do you get with a product launch?","product launch","launch"],
+     "responses": ["After your digital product launch, we provide a post-launch analysis to ensure high performance, security, lack of bugs and  ease of user interaction. Our development and QA teams work for product support, and for any immediate bug removal. We also use the users’ feedback, analytics to improve the product for the next iteration."]
+    },
+    {"tag": "quality?",
+    "patterns": ["How do you guarantee product quality?","guarantee","guarantee quality","quality"],
+    "responses": ["We follow all SDLC standard SDLC processes with atmost care to ensure quality software"]
+    },
+    {"tag": "work?",
+    "patterns": ["What can I do if I am not satisfied with your work?","not satisfied"],
+    "responses": ["We take iterim feedback on a regular basis and it is highly unlikely that you will not be satisfied with our work. In the unlikely event that you are not satisfied we will work with you to iron out all the problems in the shortest possible time.  You can track each task, review the progress of coding and communicate with our Project Manager to ensure that product development is done the way you need. "]
+    },
+    {"tag": "long",
+    "patterns": ["How long does it take to start the project development work?","time","start project"],
+    "responses": ["First, we understand the scope of the work and give you an estimation, once you have approved th e estimation is done and inform you of the estimation. If you are satisfied with the cost and timeline, the next step would be to create a project report document and a proposal. Our business team will send you the same for review. After acceptance, we would then take the project to the next stage - development stage."]
+    },
+    {"tag": "enforce",
+    "patterns": ["Can I define and enforce our coding standards on your developers?","coding standards","standards"],
+    "responses": ["Yes. Our development team can follow your coding standards in your favor."]
+    },
+    {"tag": "structure?",
+    "patterns": ["Is testing incorporated as a component within your pricing structure?","testing incorporated","testing"],
+    "responses": ["Of course, testing is in our pricing structure and we have testing engineers focused on it."]
+    },
+    {"tag": "subcontract?",
+    "patterns": ["Do you have your own development centre, or do you work on subcontract?","own development centre"],
+    "responses": ["We have our own development centre in Bengaluru, India and we do not sub-contract."]
+    },
+    {"tag": "english?",
+    "patterns": ["Do your developers and testers speak english?","english"],
+    "responses": ["Yes, all our developers and testers speak english fluently."]
+    },
+    {"tag": "appropriate",
+    "patterns": ["Can I contact the appropriate person working on our project?","contact person"],
+    "responses": ["Sure. We would recommend that you interact primarily with the assigned point of contact within the team."]
+    },
+    {"tag": "performance?",
+    "patterns": ["Would you replace your developer if I am not satisfied with the performance?","satisfied with the performance","satisfied performance"],
+    "responses": ["Yes. We will certainly replace the developer if we see that there really is a shortcoming on the developer’s end."]
+    },
+	
+	
+	{"tag": "company?",
+     "patterns": ["Are my business secrets and information safe with your company?","business secrets","safe"],
+     "responses": ["All customer information is kept confidential."]
+    },
+    {"tag": "own",
+     "patterns": ["Will I own all of the source code produced by your offshore team for my project?"],
+     "responses": ["Yes, you will. All work projects created by our offshore team are considered work made for hire, and the intellectual property rights embodied in it are your sole and exclusive property."]
+    },
+    {"tag": "maintenance?",
+     "patterns": ["Do you provide technical support and maintenance?","technical support"],
+     "responses": ["Yes. We provide technical support and application maintenance services on request and on mutually agreed terms & conditions."]
+    },
+    {"tag": "from?",
+     "patterns": ["Where do you offer your software development services from?","where offer"],
+     "responses": ["We deliver our services from our development centre in Bengaluru, India."]
+    },
+    {"tag": "meetings",
+    "patterns": ["How are the meetings/updates managed for overseas clients, particularly where the time gap is substantial?"],
+    "responses": ["As per the requirements of the particular project, daily/alternate-days/weekly meetings are scheduled over Phone calls, or Google Meet. We provide clients with comprehensive access of our project management application, to ensure that they can acquire exhaustive information regarding project development whenever they wish to."]
+    },
+    {"tag": "assign",
+    "patterns": ["How do you assign software developers for a particular project?"],
+    "responses": ["Allocation of resources is strictly influenced by the scale of the project. We are flexible to increase our resource allocation as per the needs of the project or the client."]
+    },
+    {"tag": "experience?",
+    "patterns": ["Can I get a list of all your resources and their qualifications and experience?"],
+    "responses": ["We are bound by the confidentiality agreement, and will be unable to share these details. You can be assured that only the best quality, trained and experienced resources will work on your project to meet your requirements."]
+    },
+    {"tag": "standard",
+    "patterns": ["What are the standard practices for code comments?","standard practices"],
+    "responses": ["Writing code comments is a good practice, but we opt for writing comment only when it is really required to make the code more comprehensible."]
+    },
+    {"tag": "end-user",
+    "patterns": ["Do you provide end-user documentation?","end-user documentation","user documentation"],
+    "responses": ["Oncierre delivers end-user documentation only in cases where it is cited in the work order, for which you might need to pay an additional fee."]
+    },
+    {"tag": "application?",
+    "patterns": ["How can I request a change in my project / code / application?","request a change in my project"],
+    "responses": ["We have a standard procedure of handling change requests from our customers. We first seek customer's  approval for any change request. After the customer approves the request, we do an impact analysis which will help us to deliver the timelines and cost estimates. Once the customer approves the estimates, we implement the changes."]
+    },
+    {"tag": "intellectual",
+    "patterns": ["How do you safeguard my intellectual property?"],
+    "responses": ["We have developed our own Service Level Agreement and have signed them with our development team. The agreement ensure the confidentiality and the full transfer of ownership of the intellectual property from the developer to the company. After you decide to outsource your project to us, we sign up for a software outsourcing agreement that transfers all IP rights to your company"]
+    },
+    {"tag": "fees",
+    "patterns": ["Are there any ongoing fees upon completion of the project?"],
+    "responses": ["This depends on the requirements established for your project and the SLA. If you no longer require support from us, there will be no ongoing charges. "]
+    },
+    {"tag": "doiing?",
+    "patterns": ["I am doiing fine, thanks"],
+    "responses": ["Good to know"]
+    }
+]
+}

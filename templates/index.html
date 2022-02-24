@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+.widget {
+	display: none;
+	width: 320px;
+	right: 15px;
+	height: 450px;
+	bottom: 5%;
+	position: fixed;
+	background: #f6f6f6;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 2px 10px 1px #b5b5b5;
+}
+
+.chat_header {
+	height: 10%;
+	background: pink;
+	/* #6072e6 */
+	border-radius: 10px 10px 0px 0px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.chats {
+	height: 300px;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 1px;
+	overflow-y: auto;
+	transition: 0.2s;
+	
+}
+
+div.chats::-webkit-scrollbar {
+	
+	/* remove scrollbar space /
+    background: transparent;
+    / optional: just make scrollbar invisible */
+}
+
+
+/* Track */
+
+div.chats::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+
+/* Handle */
+
+div.chats::-webkit-scrollbar-thumb {
+	background: #647aed;
+}
+
+
+/* Handle on hover */
+
+div.chats::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
+
+#close {
+	cursor: pointer;
+}
+
+.clearfix {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.message {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.botAvatar {
+	border-radius: 50%;
+	width: 2.1em;
+	height: 2.1em;
+	float: left;
+	margin-left: 5px;
+	border: 2px solid #6072e6;
+	
+}
+
+.userMsg {
+	animation: animateElement linear 0.2s;
+	animation-iteration-count: 1;
+	margin-top: 5px;
+	word-wrap: break-word;
+	padding: 0.6em 1em;
+	float: right;
+	margin-right: 0.5em;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 1.5em;
+	margin-bottom: 0.15em;
+	font-size: 12px;
+	max-width: 55%;
+	min-width: 25%;
+	line-height: 1.5em;
+}
+
+.botMsg {
+	float: left;
+	margin-top: 5px;
+	background: #ffffff;
+	box-shadow: 2px 5px 5px 1px #efeef5;
+	border: 1px solid #ffffff;
+	margin-left: 0.5em;
+	padding: 0.6em 1em;
+	border-radius: 1.5em;
+	max-width: 55%;
+	min-width: 25%;
+	font-size: 12px;
+	word-wrap: break-word;
+	line-height: 1.5em;
+}
+.usermsgs
+{
+    display: flex;
+    flex-direction: row;
+	 justify-content: flex-end;
+}
+.botusermsgs
+{
+    display: flex;
+    flex-direction: row;
+	
+}
+.userAvatar {
+	animation: animateElement linear 0.3s;
+	animation-iteration-count: 1;
+	border-radius: 50%;
+	width: 2.1em;
+	height: 2.1em;
+	float: right;
+	margin-right: 5px;
+	border: 2px solid #6072e6;
+}
+
+.singleCard {
+	/* height: 200px; */
+	padding-left: 10%;
+	padding-right: 10px;
+}
+
+.suggestions {
+	padding: 5px;
+	width: 80%;
+	border-radius: 10px;
+	background: #ffffff;
+	box-shadow: 2px 5px 5px 1px #dbdade;
+}
+
+.cardsImage {
+	width: 100%;
+	height: 80%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.keypad {
+	height: 45px;
+	position: absolute;
+	bottom: 10px;
+	width: 320px;
+}
+
+.usrInput {
+	background: #f1f0f0;
+	padding: 0.5em;
+	width: 90%;
+	margin-left: 4%;
+	border-radius: 20px;
+	box-shadow: 0px 2px 10px 1px #b5b5b5;
+	border: 0;
+	padding-left: 15px;
+	height: 40px;
+}
+
+input:focus {
+	outline: none;
+}
+
+video:focus {
+	outline: none;
+}
+
+.menuTitle {
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.menu {
+	padding: 5px;
+}
+
+.menuChips {
+	display: block;
+	background: #6072e6;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	border-radius: 15px;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+
+.imgcard {
+	object-fit: cover;
+	width: 80%;
+	height: 90%;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 1%;
+}
+
+.chip {
+	background-color: #6072e6;
+	color: #fff;
+	font-weight: normal;
+	font-weight: 0;
+	text-align: center;
+}
+
+@keyframes animateElement {
+	0% {
+		opacity: 0;
+		transform: translate(0px, 10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+.imgProfile {
+	box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+	background: white;
+	border-radius: 50px;
+	width: 60%;
+	padding: 2%;
+}
+
+.profile_div {
+	/* display: none; */
+	position: fixed;
+	padding: 5px;
+	width: 10%;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.profileIcon {
+	height: 15%;
+	align-items: center;
+	float: left;
+	margin-right: 10px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+// on input/text enter--------------------------------------------------------------------------------------
+$(document).ready(function(){
+	
+$('.usrInput').on('keyup keypress', function (e) {
+
+	var keyCode = e.keyCode || e.which;
+	var text = $(".usrInput").val();
+	
+	if (keyCode === 13) {
+		if (text == "" || $.trim(text) == '') {
+			e.preventDefault();
+			return false;
+		} else {
+			$(".usrInput").blur();
+			setUserResponse(text);
+			send(text);
+			e.preventDefault();
+			return false;
+		}
+	}
+});
+
+
+//------------------------------------- Set user response------------------------------------
+function setUserResponse(val) {
+
+
+	var UserResponse = '<div class="usermsgs"><p class="userMsg">' + val + ' </p><img class="userAvatar"  src=' + "https://static-00.iconduck.com/assets.00/user-icon-512x512-x23sj495.png" + '></div><br/>';
+	$(UserResponse).appendTo('.chats').show('slow');
+	$(".usrInput").val('');
+	scrollToBottomOfResults();
+	$('.suggestions').remove();
+}
+
+//---------------------------------- Scroll to the bottom of the chats-------------------------------
+function scrollToBottomOfResults() {
+	
+	$(".chats").animate({ scrollTop: $(document).height() }, "slow");
+
+}
+
+function send(message) {
+	console.log("User Message:", message)
+	
+	       $.ajax({
+                data: {
+                    msg: message,
+                },
+				
+                type: "POST",
+		       
+                url: "/get",  // provide your server url address here 
+            }).then(function(data) {
+		       
+			console.log(data);
+               setBotResponse(data);
+            });
+			
+}
+
+//------------------------------------ Set bot response -------------------------------------
+function setBotResponse(val) {
+
+	
+				var BotResponse = '<div class="botusermsgs"><img class="botAvatar" width="80px" height="80px" src="https://cdn.icon-icons.com/icons2/1371/PNG/512/robot02_90810.png"><p class="botMsg">' + val + '</p><div><br/>';
+					$(BotResponse).appendTo('.chats').hide().fadeIn(1000);
+
+			scrollToBottomOfResults();
+		
+}
+
+
+// ------------------------------------------ Toggle chatbot -----------------------------------------------
+$('#profile_div').click(function () {
+
+	$('.profile_div').toggle();
+	$('.widget').toggle();
+	scrollToBottomOfResults();
+});
+
+$('#close').click(function () {
+	$('.profile_div').toggle();
+	$('.widget').toggle();
+});
+});
+
+// ------------------------------------------ Suggestions -----------------------------------------------
+
+function addSuggestion(textToAdd) {
+	setTimeout(function () {
+		var suggestions = textToAdd;
+		var suggLength = textToAdd.length;
+		$(' <div class="singleCard"> <div class="suggestions"><div class="menu"></div></div></diV>').appendTo('.chats').hide().fadeIn(1000);
+		// Loop through suggestions
+		for (i = 0; i < suggLength; i++) {
+			$('<div class="menuChips" data-payload=\''+(suggestions[i].payload)+'\'>' + suggestions[i].title + "</div>").appendTo(".menu");
+		}
+		scrollToBottomOfResults();
+	}, 1000);
+}
+
+
+// on click of suggestions, get the value and send to rasa
+$(document).on("click", ".menu .menuChips", function () {
+	var text = this.innerText;
+	
+	var payload= this.getAttribute('data-payload');
+	console.log("button payload: ",this.getAttribute('data-payload'))
+	setUserResponse(text);
+	send(payload);
+	$('.suggestions').remove(); //delete the suggestions 
+});
+
+</script>
+
+   
+   <body>
+      <div class="container">
+         <div class="widget">
+            <div class="chat_header">
+               <!--Add the name of the bot here -->
+               <span style="color:black;margin-left: 5px;">Arka Bot </span>
+               <span style="color:black;margin-right: 5px;float:right;margin-top: 5px;" id="close">
+               <i class="material-icons">close</i>
+               </span>
+            </div>
+            <!--Chatbot contents goes here -->
+            <div class="chats" id="chats">
+               
+            </div>
+            <!--user typing indicator -->
+            <div class="keypad" >
+               <input type="text" id="keypad" class="usrInput browser-default" placeholder="Type a message..." autocomplete="off">
+            </div>
+         </div>
+         <!--bot widget -->
+         <div class="profile_div" id="profile_div">
+            <img class="imgProfile" src="https://cdn.dribbble.com/users/722835/screenshots/4082720/bot_icon.gif"/>
+         </div>
+      </div>
+      <!--JavaScript at end of body for optimized loading-->
+    
+
+   </body>
+</html>
